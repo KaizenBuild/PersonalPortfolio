@@ -1,2 +1,2 @@
 # PersonalPortfolio
-current Portfolio will be presented here.
+Current Portfolio will be presented here.
