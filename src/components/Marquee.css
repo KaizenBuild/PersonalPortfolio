@@ -1,0 +1,48 @@
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  background: #6b52b6;
+  height: 130px;
+}
+
+.marquee-content {
+  display: flex;
+  position: absolute;
+  width: 200%; /* Adjust width to make sure it covers the viewport */
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 30px;
+  font-size: 80px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .marquee-text {
+    padding-top: 45px;
+    font-size: 44px; /* Adjust font size for smaller devices */
+    animation-duration: 12s; /* Adjust animation speed for smaller devices */
+    letter-spacing: 3px;
+    font-size: 28px;
+  }
+  .marquee-container{
+    height: 120px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+  

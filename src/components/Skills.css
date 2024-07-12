@@ -1,0 +1,12 @@
+.skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .skill-item p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
