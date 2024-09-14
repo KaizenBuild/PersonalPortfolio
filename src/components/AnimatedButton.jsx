@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import resume from "../assets/Jyotirmay_Padhiary_Resume.pdf"; 
 
 const AnimatedButton = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -7,7 +8,7 @@ const AnimatedButton = () => {
   const handleDownload = () => {
     setIsDownloading(true);
     const link = document.createElement("a");
-    link.href = "/Resume.pdf"; // Resume file
+    link.href = resume; // resume 
     link.download = "Jyotirmay_Padhiary_Resume.pdf";
     link.click();
     setIsDownloading(false);
@@ -29,7 +30,7 @@ const AnimatedButton = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            <i className="fas fa-spinner fa-spin" />
+            <i className="fa fa-spinner fa-spin" /> {/* Ensure Font Awesome is included */}
           </motion.span>
         </span>
       ) : (

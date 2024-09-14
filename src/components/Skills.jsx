@@ -8,6 +8,7 @@ import tailwindLogo from "../assets/tailwind.png";
 import bootstrapLogo from "../assets/bootstrap.png";
 import javaLogo from "../assets/java.png";
 import mysqlLogo from "../assets/mysql.png";
+import c from "../assets/c.png"
 import "./Skills.css";
 
 const skills = [
@@ -18,6 +19,7 @@ const skills = [
   { name: "Git/GitHub", logo: gitLogo },
   { name: "Tailwind CSS", logo: tailwindLogo },
   { name: "Bootstrap", logo: bootstrapLogo },
+  { name: "C", logo: c },
   { name: "Java", logo: javaLogo },
   { name: "MySQL", logo: mysqlLogo },
 ];
